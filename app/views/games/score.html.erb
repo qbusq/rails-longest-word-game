@@ -1,0 +1,12 @@
+<h1>Result</h1>
+<p>Find me in app/views/games/score.html.erb</p>
+    <% if 1 %>
+        <p><em>Congratulations!</em> <%= params[:word] %> is a valid English word!</p>
+    <% elsif 2 %>
+        <p>Sorry but <em><%= params[:word] %></em> does not seem to be a valid English word...</p>
+    <% else %>
+      <p>Sorry but <em><%= params[:word] %></em> can't be built out of <%= params[:random] %></p>
+    <% end %>
+
+
+<%= link_to "Play again", new_path %>
